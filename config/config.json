@@ -1,0 +1,7 @@
+{
+    "dev": {
+        "configs": {
+            "test": "http://test"
+        }
+    }
+}

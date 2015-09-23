@@ -1,0 +1,16 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:400,700,900,400italic';
+
+:root {
+  --fontSize: 1rem;
+}
+
+html, body {
+  font-family: 'Roboto' Arial, serif; font-weight: 400;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto' Arial, serif; font-weight: 700;
+    color: red;
+  }
+}
+
+
