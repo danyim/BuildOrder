@@ -17,7 +17,8 @@ function BuildOrderConfig($stateProvider, $urlRouterProvider, $locationProvider,
     .state('main.home', {
       url: '',
       templateUrl: 'app/home/home.html',
-      data: { pageTitle: 'Build Order' }
+      data: { pageTitle: 'Build Order' },
+      controller: 'HomeCtrl'
     });
 }
 
