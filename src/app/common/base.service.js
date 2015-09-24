@@ -3,16 +3,22 @@
         .module('buildorder.services.base')
         .factory('baseSvc', baseSvc);
 
-    baseSvc.$inject = ['$firebaseObject'];
+    baseSvc.$inject = ['$firebaseObject', '$firebaseArray'];
 
-    function baseSvc($firebaseObject) {
-        var ref = new Firebase("https://buildorder.firebaseio.com");
+    function baseSvc($firebaseObject, $firebaseArray) {
+        var builds = new Firebase("https://buildorder.firebaseio.com/builds");
+
         return {
-            getSyncObject: getSyncObject
+            getBuild: getBuild,
+            getBuilds: getBuilds
         };
 
-        function getSyncObject() {
-            return $firebaseObject(ref);
+        function getBuild() {
+            return $firebaseObject(builds);
+        }
+
+        function getBuilds() {
+            return $firebaseArray(builds);
         }
     }
 })();
