@@ -8,6 +8,9 @@ angular.module('buildorder', [
     'ngSanitize',
     'ngResource',
     // Custom modules
+    'buildorder.home',
+    'buildorder.services.base',
     // 3rd Party Modules
-    'ui.router'
+    'ui.router',
+    'firebase'
 ]);

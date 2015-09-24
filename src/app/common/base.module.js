@@ -1,10 +1,10 @@
 (function () {
   'use strict';
 
-  angular.module('buildorder.home', [
+  angular.module('buildorder.services.base', [
     // Angular modules
     // Custom modules
-    'buildorder.services.base'
     // 3rd Party Modules
+    'firebase'
   ]);
 })();
